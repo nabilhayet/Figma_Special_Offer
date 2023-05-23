@@ -19,7 +19,8 @@ Table of Contents
 </ul>
 
 ## Form Submission
-![add_book](https://user-images.githubusercontent.com/33500404/109563397-b59f9f00-7aad-11eb-8f58-f4ced6935236.gif)
+![figma](https://github.com/nabilhayet/Figma_Special_Offer/assets/33500404/362a1791-e95f-4d3d-9acb-fbbf00af89a1)
+
 
 
 ## Tech-Stack
