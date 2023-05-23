@@ -1,6 +1,4 @@
-// let main = document.querySelector(".main")
 let body = document.querySelector(".body")
-let form = document.querySelector('#post');
 let main = document.body
 
 let name = document.querySelector("#name")
@@ -9,22 +7,28 @@ let handle = document.querySelector("#handle")
 
 let submit = document.querySelector(".submit")
 let divTag = document.createElement("div")
-let pTag = document.createElement("p")
+divTag.className = "form-info"
+let pTag = document.createElement("p");
+let li = document.createElement('li');
+let brTag = document.createElement('br')
 
 submit.addEventListener("click", function () {
-
-    pTag.textContent = name.value
-    divTag.appendChild(pTag)
-
-    pTag.textContent = email.value
-    divTag.appendChild(pTag)
-
-    pTag.textContent = handle.value
-    divTag.appendChild(pTag)
-    console.log("We are here")
-
     document.body.innerHTML = "";
     document.body.style.backgroundImage = "none"
-    document.body.style.backgroundColor = "Yellow"
+    document.body.style.backgroundColor = "bisque"
 
-});
+    pTag.innerText += "Your name is" + " " + name.value
+    pTag.appendChild(brTag)
+    divTag.appendChild(pTag)
+    main.appendChild(divTag)
+
+    pTag.innerText += "Your email is" + " " + email.value
+    pTag.appendChild(brTag)
+    divTag.appendChild(pTag)
+    main.appendChild(divTag)
+
+    pTag.innerText += "Your handle is" + " " + handle.value
+    pTag.appendChild(brTag)
+    divTag.appendChild(pTag)
+    main.appendChild(divTag)
+})
